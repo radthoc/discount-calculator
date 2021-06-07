@@ -11,16 +11,16 @@ class ShipmentDiscount
 
     private $validationRules = [
         'date' => [
-            'filter' => 'FILTER_VALIDATE_REGEXP',
+            'filter' => FILTER_VALIDATE_REGEXP,
             'options' => ['regexp' => "/\d{4}\-\d{2}-\d{2}/"],
         ],
         'size' => [
-            'filter' => 'FILTER_VALIDATE_REGEXP',
-            'options' => ['regexp' => "^(S|M|L)$"],
+            'filter' => FILTER_VALIDATE_REGEXP,
+            'options' => ['regexp' => "/^(S|M|L)$/"],
         ],
         'provider' => [
-            'filter' => 'FILTER_VALIDATE_REGEXP',
-            'options' => ['regexp' => "^(MR|LP)$"],
+            'filter' => FILTER_VALIDATE_REGEXP,
+            'options' => ['regexp' => "/^(MR|LP)$/"],
         ],
     ];
 
@@ -77,14 +77,14 @@ class ShipmentDiscount
         return $this->orders;
     }
 
-    private function isValid(): bool
+    private function isValid($order): bool
     {
-        foreach ($this->getCurrentOrder() as $column => $value) {
+        foreach ($order as $column => $value) {
             if (filter_var(
                 $value,
-                $this->validationRules[$field]['filter'],
+                $this->validationRules[$column]['filter'],
                 [
-                    'options' => $this->validationRules[$field]['options']
+                    'options' => $this->validationRules[$column]['options']
                 ]
             ) === false
             ) {
