@@ -45,10 +45,14 @@ class DiscountCalculator implements DiscountCalculatorInterface
         foreach ($fileIterator as $orderRow) {
             $order = $this->fileService->getRowColumns($orderRow);
 
+            $date = $order[0] ?? '';
+            $size = $order[1] ?? '';
+            $provider = $order[2] ?? '';
+
             $shipmentDiscount->addOrder(
-                $order[0],
-                $order[1],
-                $order[2]
+                $date,
+                $size,
+                $provider
             );
 
             //Rules that don't need state and can process one order at a time
