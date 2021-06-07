@@ -17,7 +17,7 @@ Here is the process that I followed:
 - Discount rules & tests √
 - Change discount rules to rules per shipment or rules that needed some state √
 - Discount calculator √
-- Input validator (/Users/radt/Sites/old-coding-challenge-wholesaler-integration/src/kollex/Dataprovider/Assortment/Product.php) √
+- Input validator √
 - Console command
 - Dockerize
 - Clean the framework from unnecesary files
