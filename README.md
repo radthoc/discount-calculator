@@ -20,4 +20,5 @@ Here is the process that I followed:
 - Input validator √
 - Console command
 - Dockerize
+- Fix coding style
 - Clean the framework from unnecesary files
