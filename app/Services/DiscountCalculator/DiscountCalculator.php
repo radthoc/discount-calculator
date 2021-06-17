@@ -10,21 +10,18 @@ use App\Services\DiscountCalculator\Rules\MediumShipmentRulePerOrder;
 use App\Services\DiscountCalculator\Rules\LargeShipmentRuleAllOrders;
 use App\Services\DiscountCalculator\Rules\AcummulatedDiscountsRuleAllOrders;
 use App\Entities\ShipmentDiscount;
-use App\Services\FileService;
 
 class DiscountCalculator implements DiscountCalculatorInterface
 {
-    /** @var FileserviceInterface */
+    /** @var FileServiceInterface */
     private $fileService;
 
     private $perOrderRules = [];
     private $allOrdersRules = [];
 
-    public function __construct(FileserviceInterface $fileService)
+    public function __construct(FileServiceInterface $fileService)
     {
-        $this->filseService = $fileService;
-
-        $this->fileService = App::make(FileService::class);
+        $this->fileService = $fileService;
 
         $this->addRules();
     }
