@@ -18,7 +18,7 @@ Here is the process that I followed:
 - Change discount rules to rules per shipment or rules that needed some state √
 - Discount calculator √
 - Input validator √
-- Console command √
+- Console command (*php artisan command:discount-calculator input.txt*) √
 - Dockerize
 - Fix coding style
 - Clean the framework from unnecesary files
