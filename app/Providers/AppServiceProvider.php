@@ -23,13 +23,6 @@ class AppServiceProvider extends ServiceProvider
             'App\Services\DiscountCalculator\Interfaces\DiscountCalculatorInterface',
             'App\Services\DiscountCalculator\DiscountCalculator'
         );
-
-        // $this->app->bind(
-        //     'DateHelper',
-        //     function () {
-        //         return new DateHelper();
-        //     }
-        // );
     }
 
     /**
