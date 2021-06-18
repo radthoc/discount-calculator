@@ -19,6 +19,14 @@ Here is the process that I followed:
 - Discount calculator √
 - Input validator √
 - Console command (*php artisan command:discount-calculator input.txt*) √
-- Dockerize
+- Dockerize √
 - Fix coding style
 - Clean the framework from unnecesary files
+
+## Instructions
+
+**Build the image:**
+*docker-compose build main*
+
+**Execute the discount calculator command:**
+*docker run -it discount-app_main php artisan command:discount-calculator input.txt*
