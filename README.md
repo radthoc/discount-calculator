@@ -20,7 +20,7 @@ Here is the process that I followed:
 - Input validator √
 - Console command (*php artisan command:discount-calculator input.txt*) √
 - Dockerize √
-- Fix coding style
+- Fix coding style √
 - Clean the framework from unnecesary files
 
 ## Instructions
