@@ -37,7 +37,6 @@ class AcummulatedDiscountsRuleAllOrdersTest extends TestCase
         $shipmentDiscount = $acummulatedDiscountsRule->calculateShipmentDiscount($shipmentDiscount);
 
         $this->assertEquals($this->getExpectedOrders(false), $shipmentDiscount->getOrders());
-
     }
 
     private function getOrders($sameMonthOrders = true)
@@ -383,105 +382,105 @@ class AcummulatedDiscountsRuleAllOrdersTest extends TestCase
                 'provider' => 'MR',
                 'price' => 1.50,
                 'discount' => 0.50,
-                'valid' => true,              
+                'valid' => true,
             ],[
                 'date' => '2015-02-03',
                 'size' => 'L',
                 'provider' => 'LP',
                 'price' => 6.9,
                 'discount' => 0,
-                'valid' => true, 
+                'valid' => true,
             ],[
                 'date' => '2015-02-05',
                 'size' => 'S',
                 'provider' => 'LP',
                 'price' => 1.50,
                 'discount' => 0,
-                'valid' => true, 
+                'valid' => true,
             ],[
                 'date' => '2015-02-06',
                 'size' => 'S',
                 'provider' => 'MR',
                 'price' => 1.50,
                 'discount' => 0.50,
-                'valid' => true, 
+                'valid' => true,
             ],[
                 'date' => '2015-02-06',
                 'size' => 'S',
                 'provider' => 'MR',
                 'price' => 1.50,
                 'discount' => 0.50,
-                'valid' => true, 
+                'valid' => true,
             ],[
                 'date' => '2015-02-06',
                 'size' => 'L',
                 'provider' => 'LP',
                 'price' => 6.9,
                 'discount' => 0,
-                'valid' => true, 
+                'valid' => true,
             ],[
                 'date' => '2015-02-07',
                 'size' => 'S',
                 'provider' => 'MR',
                 'price' => 1.50,
                 'discount' => 0.50,
-                'valid' => true, 
+                'valid' => true,
             ],[
                 'date' => '2015-02-07',
                 'size' => 'L',
                 'provider' => 'MR',
                 'price' => 4,
                 'discount' => 0,
-                'valid' => true, 
+                'valid' => true,
             ],[
                 'date' => '2015-02-07',
                 'size' => 'S',
                 'provider' => 'MR',
                 'price' => 1.50,
                 'discount' => 0.50,
-                'valid' => true, 
+                'valid' => true,
             ],[
                 'date' => '2015-02-08',
                 'size' => 'M',
                 'provider' => 'MR',
                 'price' => 3,
                 'discount' => 0,
-                'valid' => true, 
+                'valid' => true,
             ],[
                 'date' => '2015-02-09',
                 'size' => 'L',
                 'provider' => 'LP',
                 'price' => 0.0,
                 'discount' => 6.9,
-                'valid' => true, 
+                'valid' => true,
             ],[
                 'date' => '2015-02-10',
                 'size' => 'S',
                 'provider' => 'LP',
                 'price' => 1.50,
                 'discount' => 0,
-                'valid' => true, 
+                'valid' => true,
             ],[
                 'date' => '2015-03-01',
                 'size' => 'S',
                 'provider' => 'MR',
                 'price' => 1.50,
                 'discount' => 0.50,
-                'valid' => true, 
+                'valid' => true,
             ],[
                 'date' => '2015-03-02',
                 'size' => 'S',
                 'provider' => 'MR',
                 'price' => 1.50,
                 'discount' => 0.50,
-                'valid' => true, 
+                'valid' => true,
             ],[
                 'date' => '2015-03-02',
                 'size' => 'S',
                 'provider' => 'MR',
                 'price' => 1.50,
                 'discount' => 0.50,
-                'valid' => true, 
+                'valid' => true,
             ],
         ];
     }

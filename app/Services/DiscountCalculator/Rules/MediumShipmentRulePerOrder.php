@@ -13,9 +13,9 @@ class MediumShipmentRulePerOrder implements ShipmentDiscountRuleInterface
 {
     /**
      * @param ShipmentDiscount $shipmentDiscount
-     * 
+     *
      * @return ShipmentDiscount
-     * 
+     *
      */
     public function calculateShipmentDiscount(ShipmentDiscount $shipmentDiscount)
     {

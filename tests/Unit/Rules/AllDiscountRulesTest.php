@@ -292,7 +292,7 @@ class AllDiscountRulesTest extends TestCase
                 'valid' => true,
             ],
             [
-                'date' => '2015-03-29', 
+                'date' => '2015-03-29',
                 'size' => 'CUSPS',
                 'provider' => '',
                 'price' => 0,

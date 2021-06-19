@@ -30,7 +30,8 @@ class ShipmentDiscountCommand extends Command
      *
      * @return void
      */
-    public function __construct(DiscountCalculatorInterface $discountCalculator) {
+    public function __construct(DiscountCalculatorInterface $discountCalculator)
+    {
         parent::__construct();
 
         $this->discountCalculator = $discountCalculator;
@@ -49,8 +50,7 @@ class ShipmentDiscountCommand extends Command
 
         $shipmentDiscount = $this->discountCalculator->calculateDiscounts($fileName);
 
-        foreach($shipmentDiscount->getOrders() as $order) {
-
+        foreach ($shipmentDiscount->getOrders() as $order) {
             if (!$order['valid']) {
                 $this->error(
                     sprintf(
@@ -74,7 +74,6 @@ class ShipmentDiscountCommand extends Command
                     $order['discount']
                 )
             );
-
         }
         return 0;
     }

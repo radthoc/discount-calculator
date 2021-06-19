@@ -28,9 +28,9 @@ interface ShipmentDiscountRuleInterface
 
     /**
      * @param ShipmentDiscount $shipmentDiscount
-     * 
+     *
      * @return ShipmentDiscount
-     * 
+     *
      */
     public function calculateShipmentDiscount(ShipmentDiscount $shiptmentDiscount);
 }

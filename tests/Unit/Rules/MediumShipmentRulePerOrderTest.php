@@ -38,7 +38,7 @@ class MediumShipmentRulePerOrderTest extends TestCase
     }
 
     public function shipmentValues()
-    {        
+    {
         return [
             ['2015-02-09', 'M', 'LP', 4.90, 0],
             ['2015-02-01', 'S', 'MR', 0, 0],

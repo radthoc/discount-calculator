@@ -7,7 +7,6 @@ use Illuminate\Support\Carbon;
 use App\Entities\ShipmentDiscount;
 use App\Services\DiscountCalculator\DiscountCalculator;
 
-
 class DiscountCalculatorTest extends TestCase
 {
     public function testDiscountCalculator()

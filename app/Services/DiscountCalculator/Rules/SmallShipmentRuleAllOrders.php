@@ -15,9 +15,9 @@ class SmallShipmentRuleAllOrders implements ShipmentDiscountRuleInterface
     
     /**
      * @param ShipmentDiscount $shipmentDiscount
-     * 
+     *
      * @return ShipmentDiscount
-     * 
+     *
      */
     public function calculateShipmentDiscount(ShipmentDiscount $shipmentDiscount)
     {
@@ -56,13 +56,12 @@ class SmallShipmentRuleAllOrders implements ShipmentDiscountRuleInterface
     /**
      * @param array $orders
      * @param float $lowestPrice
-     * 
+     *
      * @return array
      */
     private function setLowerPrice(array $orders, float $lowestPrice): array
     {
-        $setPrice = function(&$order, $key, $lowestPrice) {
-
+        $setPrice = function (&$order, $key, $lowestPrice) {
             if ($order['size'] === ShipmentDiscountRuleInterface::SMALL_SIZE) {
                 $order['price'] = $lowestPrice;
             }
@@ -73,7 +72,7 @@ class SmallShipmentRuleAllOrders implements ShipmentDiscountRuleInterface
         return $orders;
     }
 
-    private function getLowestPrice(array $orders) 
+    private function getLowestPrice(array $orders)
     {
         return min(array_column($orders, 'price'));
     }

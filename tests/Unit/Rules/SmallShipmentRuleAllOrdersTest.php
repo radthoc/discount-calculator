@@ -33,7 +33,7 @@ class SmallShipmentRuleAllOrdersTest extends TestCase
     }
 
     private function getOrders()
-    {        
+    {
         return [
             ['2015-02-01', 'S', 'MR'],
             ['2015-02-02', 'S', 'MR'],

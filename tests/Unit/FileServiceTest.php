@@ -39,7 +39,8 @@ class FileServiceTest extends TestCase
         }
     }
 
-    private function validateDate($date, $format = 'Y-m-d'){
+    private function validateDate($date, $format = 'Y-m-d')
+    {
         $dateObject = Carbon::createFromFormat($format, $date);
 
         return $dateObject && $dateObject->format($format) === $date;
