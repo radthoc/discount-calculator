@@ -13,15 +13,17 @@ So I had to break the rules into the ones that can process the shipment orders r
 Also, another wrong assumption I'll have to live with is the price and discount calculation for the small shipments.
 
 Here is the process that I followed:
-- Read a text file, parse it and return an iterator & test √
+- Read a text file, parse it and return an iterator & tests √
 - Discount rules & tests √
-- Change discount rules to rules per shipment or rules that needed some state √
+- Change discount rules to rules to apply per shipment order or rules that needed some state √
 - Discount calculator √
 - Input validator √
 - Console command (*php artisan command:discount-calculator input.txt*) √
 - Dockerize √
 - Fix coding style √
-- Clean the framework from unnecesary files
+
+**Todo:**
+- Clean the framework unnecesary files
 
 ## Instructions
 
